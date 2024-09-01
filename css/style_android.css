@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+    transform: scale(0.8);
+    transform-origin: 0 0; /* Ajustar a origem da transformação para o canto superior esquerdo */
+    width: 120%; /* Ajustar a largura para compensar a escala */
+    
+    box-sizing: border-box; /* Garantir que a largura e altura incluam bordas e padding */
+    zoom:0.63/* Coloca o zoom em 200% */
+
+    
+}
+
+
+#title{
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin-top: 7%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 70%;
+    font-size: 400%;
+    background-color: chocolate;
+}
+
+#tabuleiro{
+    position: absolute;
+    width: 90%;    
+    background-color: rgb(89, 145, 38);
+
+    margin-left: 50%;
+    margin-top: 85%;
+    transform: translate(-50%,-50%);
+    margin-right: 10%;
+    font-size: 150%;  
+    
+}
+
+
+#inf{
+    width: 50%;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    background-color: rgb(255, 247, 247);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+span{
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-size: 145%;
+    box-shadow: 2px 2px 2px 2px ;
+    position: absolute;
+    top: 2%;
+    
+
+}
+
+#p1{
+    margin-left: 1%;
+    width: 20%;
+    background-color: rgb(255, 80, 80);
+    
+
+}
+#p2{
+    font-size: 143%;
+    margin-left: 78%;
+    width: 20%;
+    background-color: blue;
+
+}
+
+#jogo{
+    background-color: goldenrod;
+    border: solid 10px black;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    width: 60%;
+    height: 65%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* Esta dece jeito por conta de que cada dive é unica para ser manipulada no JS*/
+#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9{
+    margin: 2.5% 1% 1% 2%;
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    background-color: aliceblue;
+    text-align: center;
+}
+button{
+    box-shadow: 3px 3px 3px 3px black;
+    font-weight:  700;
+    background: white;
+    width:50%;
+    height: 50px;
+    border-radius: 10px ;
+
+    margin-top: 130%;
+    margin-left: 50%;
+    
+    transform: translate(-50%,-50%); 
+    font-size: 130%; 
+     
+}

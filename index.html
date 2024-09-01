@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="css/computador_style.css" media="(min-width: 650px)">
+    <link rel="stylesheet" href="css/style_android.css" media="screen and (max-width:650px)">
+</head>
+<body>
+    
+
+    
+    <div id="title">
+        JOGO DA VELHA
+    </div>
+    <div id="tabuleiro">
+       <div id="inf">
+           <h1>JOGO EM ANDAMENTO</h1>
+       </div>
+        <div id="cen">
+            <span id="p1"> jogador 1</span>
+            <span id="p2">Jogador 2</span>  
+        </div>
+
+        <div id="jogo">
+            <div id="a1" onmouseout="sair(0)" onmouseenter="selicionar(0)" onclick="clicar(1,0,0)"></div><div id="a2" onmouseout="sair(1)" onmouseenter="selicionar(1)" onclick="clicar(2,0,1)"></div><div id="a3" onmouseout="sair(2)" onmouseenter="selicionar(2)" onclick="clicar(3,0,2)"></div><br>
+            <div id="a4" onmouseout="sair(3)" onmouseenter="selicionar(3)" onclick="clicar(4,1,0)"></div><div id="a5" onmouseout="sair(4)" onmouseenter="selicionar(4)" onclick="clicar(5,1,1)"></div><div id="a6" onmouseout="sair(5)" onmouseenter="selicionar(5)" onclick="clicar(6,1,2)"></div><br>
+            <div id="a7" onmouseout="sair(6)" onmouseenter="selicionar(6)"  onclick="clicar(7,2,0)"></div><div id="a8" onmouseout="sair(7)" onmouseenter="selicionar(7)" onclick="clicar(8,2,1)"></div><div onmouseout="sair(8)" onmouseenter="selicionar(8)" id="a9" onclick="clicar(9,2,2)"></div>
+        </div>
+
+        <button id="RECO" onclick="reiniciar()" onmouseenter="selebot()" onmouseout="sairBoto()"> RECOMEÇAR JOGO</button>       
+        <p></p>
+    </div>
+    
+
+
+    <script src="JavaScript/coodigo.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+    transform: scale(0.8);
+    transform-origin: 0 0; /* Ajustar a origem da transformação para o canto superior esquerdo */
+    width: 120%; /* Ajustar a largura para compensar a escala */
+    height: 120%; /* Ajustar a altura para compensar a escala */
+    box-sizing: border-box; /* Garantir que a largura e altura incluam bordas e padding */
+        
+}
+
+
+#title{
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+    width: 500px;
+    font-size: 50px;
+    background-color: chocolate;
+}
+#tabuleiro{
+    position: absolute;
+    width: 700px;
+    
+    background-color: rgb(89, 145, 38);
+    margin-top: 450px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 150px;
+    
+}
+
+
+#inf{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    background-color: rgb(255, 247, 247);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+span{
+    
+    display:inline-block;
+    font-style: italic;
+    font-size: 35px;
+    box-shadow: 2px 2px 2px 2px ;
+    position: absolute;
+    top: 2px;
+}
+#p1{
+    margin-left: 20px;
+    background-color: rgb(255, 80, 80);
+
+}
+#p2{
+    margin-left: 76%;
+    background-color: blue;
+
+}
+
+#jogo{
+    background-color: goldenrod;
+    border: solid 10px black;
+    position: absolute;
+    top:59%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* Esta dece jeito por conta de que cada dive é unica para ser manipulada no JS*/
+#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9{
+    margin: 10px;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: aliceblue;
+    text-align: center;
+}
+button{
+    box-shadow: 3px 3px 3px 3px black;
+    font-weight:  700;
+    background: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px ;
+    text-align: center;
+    margin-top: 86%;
+    margin-left: 290px;
+    margin-bottom: 15px;
+    
+}
